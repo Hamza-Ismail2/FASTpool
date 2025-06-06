@@ -1,10 +1,12 @@
-export const dynamic = "force-dynamic";
-
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import Auth from "@/features/auth/auth";
 
 export default function AuthPage() {
-    return <Auth />;
+    return (
+        <Suspense fallback={null}>
+            <Auth />
+        </Suspense>
+    );
 }
