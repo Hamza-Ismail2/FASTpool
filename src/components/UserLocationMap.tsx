@@ -10,10 +10,14 @@ import { MapPin, Route, Clock } from "lucide-react";
 const iconUrl = require("leaflet/dist/images/marker-icon.png");
 const iconShadow = require("leaflet/dist/images/marker-shadow.png");
 
+const blueIconUrl = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png";
+const blueIconRetinaUrl = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png";
+const iconShadowUrl = "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-shadow.png";
+
 const userIcon = new L.Icon({
-  iconUrl,
-  iconRetinaUrl: iconUrl,
-  shadowUrl: iconShadow,
+  iconUrl: blueIconUrl,
+  iconRetinaUrl: blueIconRetinaUrl,
+  shadowUrl: iconShadowUrl,
   iconSize: [25, 41],
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
