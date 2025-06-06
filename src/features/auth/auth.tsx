@@ -15,7 +15,7 @@ function SignInScreen() {
     const [needsProfile, setNeedsProfile] = useState(false);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
-    const ALLOWED_DOMAIN = "nu.edu.pk";
+    const ALLOWED_DOMAIN = "gmail.com";
     
     const router = useRouter();
     const searchParams = useSearchParams();
