@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 "use client";
 
 import { Car, MapPin, Search, UserCheck, Calendar, Clock, Filter } from "lucide-react";
