@@ -5,8 +5,8 @@ import L from "leaflet";
 import { MapPin, Route, Clock } from "lucide-react";
 
 // Fix default marker icon issue in Leaflet with Webpack
-import iconUrl from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
+const iconUrl = require("leaflet/dist/images/marker-icon.png");
+const iconShadow = require("leaflet/dist/images/marker-shadow.png");
 
 const userIcon = new L.Icon({
   iconUrl,
